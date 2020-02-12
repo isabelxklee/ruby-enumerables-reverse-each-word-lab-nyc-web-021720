@@ -9,8 +9,10 @@
 #solve first using .each, then .collect
 
 def reverse_each_word(string)
-  array = string.split(",")
-  reversed_array = array.each { |word| word.reverse }
-  reversed_array.join(" ")
-  puts reversed_array
-end 
+    array = string.split(" ")
+    reversed = []
+    array.each { |word| reversed.push(word.reverse) }
+    reversed.join(" ")
+  end 
+
+reverse_each_word(string)
