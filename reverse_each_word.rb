@@ -15,5 +15,5 @@ def reverse_each_word(string)
     reversed = []
     # array.collect { |word| word.reverse }
     array.collect { |word| reversed.push(word.reverse) }
-    array.join(" ")
+    reversed.join(" ")
 end 
